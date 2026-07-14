@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The working notebook and portfolio of Anne Yang, a Master's student in Informatics at TUM." />
+    <title>Anne Yang</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Kalam:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Anne Yang home">Anne Yang<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#cv">CV</a>
+        <a href="#work">Projects</a>
+        <a href="#favorites">Fav</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <h1 id="hero-title">Hi, I'm Anne.</h1>
+          <p class="hero-intro">
+            I'm a Master's Computer Science Student at TUM. I am interested in software-intensive systems,
+            applications of AI, and the point where requirements become something a team can actually build. Take a
+            look around :)
+          </p>
+          <div class="hero-actions">
+            <a class="text-link" href="#work">Start with my work <span aria-hidden="true">&darr;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cv" id="cv" aria-labelledby="cv-title">
+        <header class="section-heading" data-reveal>
+          <div><p class="section-index">01 / CV</p><h2 id="cv-title">Education and experience.</h2></div>
+        </header>
+        <div class="timeline">
+          <article class="timeline-row" data-reveal>
+            <p class="timeline-date">May 2026 – now</p><div><p class="timeline-type">Education</p><h3>M.Sc. Computer Science, <a href="https://www.tum.de/en/">TUM</a></h3><p>Continuing my studies in Informatics at the Technical University of Munich.</p></div>
+          </article>
+          <article class="timeline-row" data-reveal>
+            <p class="timeline-date">2022 – 2026</p><div><p class="timeline-type">Education</p><h3>B.Sc. Computer Science, <a href="https://www.tum.de/en/">TUM</a></h3><p>Minor in Mechanical Engineering. Thesis: <a href="https://github.com/anneyd/completeness_analysis">“LLM-based Completeness Analysis of Logical Architectures in System Models.”</a> External course: Harvard Innovation Labs' “How to Create a Climate Venture.”</p></div>
+          </article>
+          <article class="timeline-row" data-reveal>
+            <p class="timeline-date">May 2026 – now</p><div><p class="timeline-type">Experience</p><h3>Working Student, <a href="https://www.bmwgroup.com/en.html">BMW Group</a></h3><p>Product-requirements management and systems engineering: improving workflows, developing Codebeamer process concepts, and presenting results to teams and stakeholders.</p></div>
+          </article>
+          <article class="timeline-row" data-reveal>
+            <p class="timeline-date">Nov 2024 – Oct 2025</p><div><p class="timeline-type">Experience</p><h3>Working Student, <a href="https://www.fortiss.org/">fortiss</a></h3><p>Built a lane-detection ML pipeline and modular ROS2 data-collection framework; containerized deployments with Docker and reviewed and tested software.</p></div>
+          </article>
+          <article class="timeline-row" data-reveal>
+            <p class="timeline-date">Nov 2023 – Oct 2024</p><div><p class="timeline-type">Experience</p><h3>Software Engineer, <a href="https://horyzn.org/">HORYZN</a></h3><p>Developed ROS2 and Python software for Mission Pulse, an autonomous UAV designed to transport defibrillators, from requirements and hardware integration to Gazebo simulation and real flight tests.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <header class="section-heading" data-reveal>
+          <p class="section-index">02 / Projects</p>
+          <h2 id="work-title">Projects</h2>
+        </header>
+
+        <div class="projects-equal">
+          <article class="project-entry" data-reveal>
+            <p class="project-kind">University team project</p>
+            <h3>LLM-based code translation</h3>
+            <p>A full-stack application for translating code with fine-tuned language models. React and Django application, Hugging Face model integration, evaluation, and Docker setup.</p>
+            <p class="project-tools">React / Django / Python / Hugging Face / Docker</p>
+            <a class="project-link" href="https://github.com/anneyd/bpc_code_translation">View on GitHub</a>
+          </article>
+
+          <article class="project-entry" data-reveal>
+            <p class="project-kind">Bachelor's thesis</p>
+            <h3>LLM-based completeness analysis of system models</h3>
+            <p>A proof of concept and experimental study for automatically checking whether logical architectures satisfy system requirements, including comparison with results from human modelers.</p>
+            <p class="project-tools">Python / FastAPI / Vertex AI / Gemini / Supabase / Jupyter</p>
+            <a class="project-link" href="https://github.com/anneyd/completeness_analysis">View on GitHub</a>
+          </article>
+
+          <article class="project-entry" data-reveal hidden>
+            <p class="project-kind">Personal project</p>
+            <h3>PalPlans</h3>
+            <p class="prompt">[Add what PalPlans helps people do, what you personally built, and one detail that made the project interesting.]</p>
+            <p class="project-tools prompt">[Main technologies]</p>
+          </article>
+
+          <article class="project-entry" data-reveal>
+            <p class="project-kind">In progress</p>
+            <h3>SoundNotes</h3>
+            <p>A local web app that turns solo-piano MP3s into editable grand-staff scores, with piano-roll correction, playback, hand assignment, and MusicXML and PDF export.</p>
+            <p class="project-tools">React / FastAPI / Basic Pitch / music21 / Verovio</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section piano" id="piano" aria-labelledby="piano-title" hidden>
+        <header class="section-heading" data-reveal>
+          <p class="section-index">future / listening journal</p>
+          <h2 id="piano-title">Piano pieces, written by me.</h2>
+          <p>I keep music here as part of the work, not as an afterthought. Recordings will appear as I add them.</p>
+        </header>
+        <div class="composition-list">
+          <article class="composition" data-reveal>
+            <p class="track-mark">A</p>
+            <div><h3 class="prompt">[Composition title]</h3><p class="prompt">[When it was written, or the feeling that started it.]</p></div>
+            <p class="composition-date prompt">[year / duration]</p>
+            <div class="recording-state"><span aria-hidden="true"></span> recording to come</div>
+          </article>
+          <article class="composition" data-reveal>
+            <p class="track-mark">B</p>
+            <div><h3 class="prompt">[Composition title]</h3><p class="prompt">[A small note about its rhythm, story, or unfinished edges.]</p></div>
+            <p class="composition-date prompt">[year / duration]</p>
+            <div class="recording-state"><span aria-hidden="true"></span> recording to come</div>
+          </article>
+          <article class="composition" data-reveal>
+            <p class="track-mark">C</p>
+            <div><h3 class="prompt">[Composition title]</h3><p class="prompt">[What you hear in this piece, in your own words.]</p></div>
+            <p class="composition-date prompt">[year / duration]</p>
+            <div class="recording-state"><span aria-hidden="true"></span> recording to come</div>
+          </article>
+        </div>
+        <p class="hand-note music-note">recordings live in assets/music/</p>
+      </section>
+
+      <section class="section favorites" id="favorites" aria-labelledby="favorites-title">
+        <header class="section-heading narrow" data-reveal>
+          <p class="section-index">03 / Fav</p>
+          <h2 id="favorites-title">Little things worth passing on.</h2>
+          <p>Things I would recommend to a friend.</p>
+        </header>
+        <div class="favorite-notes">
+          <article class="favorite-note book" data-reveal><p class="fav-category">eat in Munich</p><h3>Datang Malatang</h3><p>Just comfort food :)</p></article>
+          <article class="favorite-note sound" data-reveal><p class="fav-category">play together</p><h3><a href="https://www.sem-muenchen.de/">Symphonisches Ensemble München</a></h3><p>The orchestra where I play violin.</p></article>
+          <article class="favorite-note tool" data-reveal hidden><p class="fav-category">bake</p><h3>The best cheesecake recipe</h3><p class="prompt">[Add the recipe link and one reason this is the one.]</p></article>
+          <article class="favorite-note place" data-reveal><p class="fav-category">quick snack</p><h3>BANG! Onigiri-san</h3><p>Perfect quick snack!</p></article>
+          <article class="favorite-note found" data-reveal><p class="fav-category">favorite place in Munich</p><h3>Every green hill</h3><p>Or any spot to watch the sunset.</p></article>
+          <article class="favorite-note reading" data-reveal><p class="fav-category">read</p><h3><a href="https://worksinprogress.co/">Works in Progress</a></h3><p>A magazine for new and underrated ideas to improve the world.</p></article>
+          <article class="favorite-note pizza" data-reveal><p class="fav-category">eat in Munich</p><h3>Pizza Studio Munich</h3><p>Hidden gem for delicious pizza!</p></article>
+        </div>
+        <div class="fav-annotations">
+          <p class="hand-note">a deliberately incomplete list</p>
+          <p class="hand-note">Good food, good mood XD</p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <p class="section-index">04 / Contact</p>
+        <div class="contact-layout" data-reveal>
+          <h2 id="contact-title">Let's get in touch!</h2>
+          <div class="contact-links">
+            <a href="https://github.com/anneyd">GitHub</a>
+            <a href="https://www.linkedin.com/in/yang-anne/">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>&copy; <span data-year></span> Anne Yang</p><p>Last updated: July 2026</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
